@@ -39,6 +39,7 @@ tpr = pd.read_pickle(r'data/tpr_embedding_for_dash_app_openai_ada_v2.pickle')
 
 # Flask app
 app = Flask(__name__)
+server = app.server
 app.secret_key = 'your-secret-key'
 
 # Define the Dash app
