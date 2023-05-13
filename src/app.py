@@ -31,6 +31,7 @@ def search_docs(df, user_query, threshold=0.8):
     res = df[df['similarities']>threshold].sort_values("similarities", ascending=False)
     return res
 
+
 # Load the data
 # df = pd.read_csv("data/my_data.csv")
 # tpr = pd.read_parquet(r'data/tpr_embedding_for_dash_app_openai_ada_v2.parquet')
